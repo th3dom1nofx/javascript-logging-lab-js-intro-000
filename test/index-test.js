@@ -4,7 +4,7 @@ const jsdom = require('jsdom')
 const path = require('path')
 
 
-describe('index', () => {
+describe('index', (calls console.warn("This is not correct Felix")) => {
   const html = '<div></div>'
   const src = path.resolve(__dirname, '..', 'index.js')
 
